@@ -11,4 +11,5 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY . .
 
 # Hugging Face Spaces requires port 7860
-CMD ["gunicorn", "-b", "0.0.0.0:7860", "app:app"]
+# Streamlit runs on port 8501 by default, but we can configure it
+CMD ["streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0"]
