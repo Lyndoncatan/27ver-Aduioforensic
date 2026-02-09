@@ -1,0 +1,10 @@
+kind: wasmer.io/App.v0
+name: audio-forensic-app
+package: lyndoncatan/audio-forensic-app
+cli_args:
+  - -m
+  - streamlit
+  - run
+  - app.py
+  - --server.port=$PORT
+  - --server.address=0.0.0.0
