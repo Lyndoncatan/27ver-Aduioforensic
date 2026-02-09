@@ -1,7 +1,2 @@
-numpy
-scipy
-mediapipe
-demucs
-flask
 streamlit
 
